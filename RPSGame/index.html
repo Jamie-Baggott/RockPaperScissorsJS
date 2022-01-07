@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./style.css"/>
+    <title>Rock, Paper Scissors game</title>
+</head>
+<body>
+    <main class = "game">
+        <!-- Scoreboard containing the player's details and cpu details such as score and wins  -->
+        <section class = "scoreboard fadeOut">
+            <article class = "user-score">
+                <h2>Your Score</h2>
+                <p>0</p>
+            </article>
+
+            <article class = "cpu-score">
+                <h2>CPU Score</h2>
+                <p>0</p>
+            </article>
+        </section>
+
+        <section class = "wins fadeOut">
+            <article class= "user-wins">
+                <h2>Your Wins</h2>
+                <p>0</p>
+            </article>
+            <article class= "cpu-wins">
+                <h2>CPU Wins</h2>
+                <p>0</p>
+            </article>
+        </section>
+
+        <!-- Landing page that you see first allowing registration and login -->
+        <section class = "intro">
+            <h1>Rock Paper Scissors Game, by Jamie Baggott</h1>
+        
+            <!-- Login form -->
+		    <form>
+			    <h2 class= "login">Login</h2>
+			    <input type="text" id="username" placeholder="Username">
+			    <input type="password" id="password" placeholder="Password">
+			    <button type="button" onclick="login()">Login</button>
+		    </form> 
+		<!-- Register user form -->
+		    <form>
+			    <h2 class= "register">Register</h2>
+			    <input type="text" id="newUsername" placeholder="Username">
+			    <input type="password" id="newPassword" placeholder="Password">
+			    <button type="button" onclick="registerUser()">Register</button>
+		    </form> 
+		    <script src="./users.js"></script>
+            
+        </section>
+
+        <!-- This contains the match functionality including the buttons and images for the decisions made 
+            by the user and cpu as well as a simple logout button for the user -->
+        <section class= "match fadeOut">
+            <h2 class= "winner">Rock, Paper or Scissors?</h2>
+            <aside class= "decisions">
+                <img class= "user-decision" src="" alt="">
+                <img class= "cpu-decision" src="" alt="">
+                
+                
+            </aside>
+        
+            <aside class= "options">
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
+            </aside>
+
+        <footer class = "logout">
+            <button onClick="window.location.reload();">Logout</button>
+        </footer>
+
+        </section>
+        
+    </main>
+
+    <script src="app.js"></script>    
+    
+</body>
+</html>

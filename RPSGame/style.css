@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+main{
+    height:100vh;
+    background-color: rgb(192, 192, 192);
+    font-family: sans-serif;
+}
+.scoreboard{
+    color :rgb(0, 0, 0);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 0.5s ease 0.5s
+}
+.wins{
+    color :rgb(0, 0, 0);
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    padding-bottom: 40px;
+    transition: opacity 0.5s ease 0.5s;
+}
+.scoreboard h2, .wins h2{
+    font-size: 30px;
+}
+h2:first-letter {
+    text-transform:capitalize;
+}
+.scoreboard p, .wins p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.intro{
+    color :rgb(0, 0, 0);
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.intro input{
+    padding-top: 400px;
+    background: transparent;
+    width: 200px;
+    padding: 2px;
+    margin-bottom: 2em;
+    border: 2px solid black;
+    border-radius: 8000px;
+    color: rgb(0, 0, 0);
+}
+
+.intro h1 {
+    font-size: 40px;
+    padding-bottom: 50px;
+    
+}
+
+.intro button{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 30000px;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+.match button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: rgb(192, 192, 192);
+    font-size: 20px;
+    background: rgb(0, 0, 0);
+    border-radius: 30000px;
+    cursor: pointer;
+    
+}
+
+.match {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+    justify-content: space-around;
+}
+
+.winner {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 40px;
+    padding-top: 400px;
+}
+.decisions, .options {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.user-choice{
+    transform: rotateY(180deg);
+}
+section.fadeOut{
+    opacity:0;
+    pointer-events:none;
+}
+section.fadeIn{
+    opacity:1;
+    pointer-events:all;
+}
+
+footer{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 400px;
+    }
