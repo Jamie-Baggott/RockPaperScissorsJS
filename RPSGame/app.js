@@ -50,7 +50,7 @@ const game = ()=> {
         const cpuDecision = document.querySelector(".cpu-decision")
 
         //CPU Options
-        const cpuOptions = ["Rock", "Paper", "Scissors"];
+        const cpuOptions = ["rock", "paper", "scissors"];
 
         //Allows the CPU to choose their option at random
         options.forEach(option=>{
@@ -117,9 +117,9 @@ const game = ()=> {
             winner.textContent = "It is a draw! You and CPU both picked the same";
             return;
         }
-        //Checks if user chose Rock
-        if(userChoice === "Rock"){
-            if(cpuChoice === "Scissors"){
+        //Checks if user chose rock
+        if(userChoice === "rock"){
+            if(cpuChoice === "scissors"){
                 winner.textContent = "You win! You picked Rock, CPU picked Scissors!"
                 uScore++;
                 updateScore();
@@ -132,8 +132,8 @@ const game = ()=> {
             }
         }
         //Checks if user chose Paper
-        if(userChoice === "Paper"){
-            if(cpuChoice === "Scissors"){
+        if(userChoice === "paper"){
+            if(cpuChoice === "scissors"){
                 winner.textContent = "You lose! You picked Paper, CPU picked Scissors!"
                 cScore++;
                 updateScore();
@@ -146,8 +146,8 @@ const game = ()=> {
             }
         }
         //Checks if user chose Scissors
-        if(userChoice === "Scissors"){
-            if(cpuChoice === "Rock"){
+        if(userChoice === "scissors"){
+            if(cpuChoice === "rock"){
                 winner.textContent = "You lose! You picked Scissors, CPU picked Rock!"
                 cScore++;
                 updateScore();
