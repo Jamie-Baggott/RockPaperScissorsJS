@@ -18,9 +18,9 @@ const game = ()=> {
         playButton.addEventListener("click", () => {
 
             var username = document.getElementById('username').value
-             var password = document.getElementById('password').value
+            var password = document.getElementById('password').value
             
-             //Updates the name for the user so it is personalised to their login
+             //Updates the name for the user so it is personalized to their login
              const updateName = () =>{
                 const userName = document.querySelector(".user-score h2")
                 const userNameWins = document.querySelector(".user-wins h2")
@@ -59,11 +59,12 @@ const game = ()=> {
                 const cpuChoice = cpuOptions[cpuNum];
 
                 //Compare choices between user and cpu
-                compareChoices(this.textContent, cpuChoice)
-
+                compareChoices((this.textContent).toLowerCase(), cpuChoice)
+                
                 //Update choices visually
-                userDecision.src = `./assets/${this.textContent}.png`;
+                userDecision.src = `./assets/${(this.textContent).toLowerCase()}.png`;
                 cpuDecision.src = `./assets/${cpuChoice}.png`; 
+                
             })
         });
     };
